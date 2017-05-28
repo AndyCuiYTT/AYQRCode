@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vp3-wg-kfK">
+                                <rect key="frame" x="36" y="40" width="303" height="303"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Vp3-wg-kfK" secondAttribute="height" multiplier="1:1" id="3np-q4-ewC"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTK-kk-mBT">
+                                <rect key="frame" x="66" y="443" width="46" height="30"/>
+                                <state key="normal" title="二维码"/>
+                                <connections>
+                                    <action selector="qrcodeNormal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WTV-44-0GK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZt-I7-Mzg">
+                                <rect key="frame" x="232" y="443" width="77" height="30"/>
+                                <state key="normal" title="二维码彩色"/>
+                                <connections>
+                                    <action selector="qrcodeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mZK-zd-gLr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncf-gW-0jf">
+                                <rect key="frame" x="66" y="523" width="46" height="30"/>
+                                <state key="normal" title="条形码"/>
+                                <connections>
+                                    <action selector="generateNormal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sKc-Qk-JpL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVA-Eb-9me">
+                                <rect key="frame" x="232" y="523" width="77" height="30"/>
+                                <state key="normal" title="条形码彩色"/>
+                                <connections>
+                                    <action selector="generateColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bEw-AC-5br"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ncf-gW-0jf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="1zj-mx-8KE"/>
+                            <constraint firstItem="BTK-kk-mBT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="C2m-6T-CyG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lZt-I7-Mzg" secondAttribute="trailing" constant="50" id="MJD-kD-2YZ"/>
+                            <constraint firstItem="Ncf-gW-0jf" firstAttribute="top" secondItem="BTK-kk-mBT" secondAttribute="bottom" constant="50" id="cbf-VE-dCh"/>
+                            <constraint firstItem="Vp3-wg-kfK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="eyX-z6-cSJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vp3-wg-kfK" secondAttribute="trailing" constant="20" id="f9S-k8-kyz"/>
+                            <constraint firstItem="BTK-kk-mBT" firstAttribute="top" secondItem="Vp3-wg-kfK" secondAttribute="bottom" constant="100" id="fkA-Np-g48"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pVA-Eb-9me" secondAttribute="trailing" constant="50" id="qXc-fx-bQ7"/>
+                            <constraint firstItem="Vp3-wg-kfK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="rSP-nq-z30"/>
+                            <constraint firstItem="lZt-I7-Mzg" firstAttribute="centerY" secondItem="BTK-kk-mBT" secondAttribute="centerY" id="sT2-Yy-bJw"/>
+                            <constraint firstItem="pVA-Eb-9me" firstAttribute="centerY" secondItem="Ncf-gW-0jf" secondAttribute="centerY" id="vmy-pw-hnG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Vp3-wg-kfK" id="hgl-RZ-48d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
