@@ -2,8 +2,8 @@
 //  AYSweepCodeViewController.m
 //  AYQRCode
 //
-//  Created by Angelo on 2016/12/28.
-//  Copyright © 2016年 Angelo. All rights reserved.
+//  Created by Andy on 2016/12/28.
+//  Copyright © 2016年 Andy. All rights reserved.
 //
 
 #import "AYSweepCodeViewController.h"
